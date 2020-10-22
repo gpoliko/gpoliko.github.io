@@ -176,11 +176,6 @@ body {
     margin-right: 5px;
 }
 
-.aside .copyright-text {
-    font-size: 13px;
-    color: #7d7d7d;
-}
-
 .aside .logo a::before {
     border-top: 4px solid #45A29E;
     border-left: 4px solid #45A29E;
@@ -188,7 +183,7 @@ body {
 
 .aside .logo a::after {
     border-bottom: 4px solid #45A29E;
-    border-right: 4px solid #45A29E;
+    border-right: 4px solid #45a29e;
 }
 
 .aside .nav li a:hover,
@@ -224,9 +219,37 @@ body {
 }
 
 .home .intro h1 {
-    font-size: 30px;
+    font-size: 40px;
     color: #302e4d;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
+    margin: 20px 0 5px;
+}
+
+.home .container h1 {
+    font-size: 50px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0 5px;
+}
+
+.home .container h2 {
+    font-size: 22px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0 5px;
+}
+
+.home .container h3 {
+    font-size: 18px;
+    color: #45a29e;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
     margin: 20px 0 5px;
 }
