@@ -181,6 +181,27 @@ body {
     color: #7d7d7d;
 }
 
+.aside .logo a::before {
+    border-top: 4px solid #45A29E;
+    border-left: 4px solid #45A29E;
+}
+
+.aside .logo a::after {
+    border-bottom: 4px solid #45A29E;
+    border-right: 4px solid #45A29E;
+}
+
+.aside .nav li a:hover,
+.aside .nav li a.active {
+    color: #45A29E;
+}
+
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after {
+    background-color: #45A29E;
+}
+
 
 /* home */
 
