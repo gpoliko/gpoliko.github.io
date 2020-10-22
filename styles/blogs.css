@@ -1,0 +1,13 @@
+article {
+    display: grid;
+    grid-template-columns: 1fr 740px 1fr;
+}
+
+article>* {
+    grid-column: 2;
+}
+
+article>figure {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+}

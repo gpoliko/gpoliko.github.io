@@ -1,140 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Giovanni Poliko | EDA Student - Web Development</title>
-
-    <link href="styles/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/green.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-
-    <div class="container-fluid">
-        <!-- box header -->
-        <header class="gio-header">
-            <div class="gio-logo">
-                <a href="index.html">GIO</a>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Aside -->
+        <div class="aside">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Giovanni</a>
             </div>
-            <!-- box-nav to go here-->
-        </header>
-        <!-- end box header -->
-
-        <!-- Nav to go here-->
-        <!-- end Nav -->
-
-        <!-- Hero section -->
-        <section class="hero">
-            <div class="table-cell">
-                <h1 class="headline">
-                    <!-- Multiple animated text to go here -->
-                    <span class="word-wrapper">
-							<b class="is-visible">Kia ora Taiao! I'm Giovanni.</b>
-						</span>
-                    <!-- animated text end -->
-                </h1>
-                <h5>
-                    EDA Web Development Student
-                </h5>
+            <!-- Nav Toggler Btn -->
+            <div class="nav-toggler">
+                <span></span>
             </div>
-
-            <div class="mouse">
-                <div class="scroll"></div>
+            <!-- Nav -->
+            <ul class="nav">
+                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Blogs</a></li>
+            </ul>
+            <!-- Copyright -->
+            <div class="copyright-text">
+                &copy; 2020 Giovanni Poliko
             </div>
-        </section>
-        <!-- end of hero section -->
-    </div>
-
-    <div class="w3-bar w3-black">
-        <button class="w3-bar-item w3-button" onclick="openBlog('Cultural')">Cultural</button>
-        <button class="w3-bar-item w3-button" onclick="openBlog('Technical')">Technical</button>
-    </div>
-
-    <!-- Cultural Blogs-->
-    <div id="Cultural" class="blogType">
-        <h2>Cultural Blogs</h2>
-        <div class="blog-div">
-            <div class="blogs">
-                <div class="content">
-                    <div id="cultural-blogs" class="blogs-container">
-                        <a href="s1culture.html">
-                            <img alt="Sprint 1 Cultural Blog" src="images/values.jpg" width="350" height="200">
-                            <h5>Sprint 1 Cultural Blog</h5>
-                        </a>
-
-                        <a href="">
-                            <img alt="Sprint 2 Cultural Blog" src="images/values.jpg" width="350" height="200">
-                            <h5>Sprint 2 Cultural Blog</h5>
-                        </a>
-
-                        <a href="">
-                            <img alt="Sprint 3 Cultural Blog" src="images/values.jpg" width="350" height="200">
-                            <h5>Sprint 3 Cultural Blog</h5>
-                        </a>
+        </div>
+        <!-- Aside End -->
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Home section -->
+            <section class="home section">
+                <div class="container">
+                    <div class="intro">
+                        <img src="images/profile.jpeg" alt="profile" class="shadow-dark">
+                        <h1>Giovanni Poliko</h1>
+                        <p>EDA Web Development Student - Horoeka 2020</p>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- Home section End -->
         </div>
+        <!-- Main Content End -->
     </div>
-
-    <!-- Technical Blogs -->
-    <div id="Technical" class="blogType" style="display:none">
-        <h2>Technical Blogs</h2>
-        <div class="blog-div">
-            <div class="blogs">
-                <div class="content">
-                    <div id="technical-blogs" class="blogs-container">
-                        <a href="blog/sprint1-technical.html">
-                            <img alt="Sprint 1 Technical Blog" src="images/identity.jpg" width="350" height="200">
-                            <h5>Sprint 1 Technical Blog</h5>
-                        </a>
-
-                        <a href="">
-                            <img alt="Sprint 1 Technical Blog" src="images/identity.jpg" width="350" height="200">
-                            <h5>Sprint 2 Technical Blog</h5>
-                        </a>
-
-                        <a href="">
-                            <img alt="Sprint 3 Technical Blog" src="images/identity.jpg" width="350" height="200">
-                            <h5>Sprint 3 Technical Blog</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Blogs div -->
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">© Giovanni Poliko 2020 | EDA</p>
-        </div>
-    </footer>
-    <!-- end of Footer -->
-
-    <!-- back to top -->
-    <!-- end back to top-->
-
-    <!-- plugins to go here-->
-    <!-- end of plugins -->
+    <!-- Main Container -->
 </body>
-
-<script>
-    function openBlog(type) {
-        var i;
-        var x = document.getElementsByClassName("blogType");
-
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        document.getElementById(type).style.display = "block";
-    }
-</script>
 
 </html>
