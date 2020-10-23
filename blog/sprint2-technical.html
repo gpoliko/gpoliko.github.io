@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Giovanni Poliko | EDA Student - Web Development</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a href="../index.html">Giovanni</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="../index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="./sprint1-cultural.html"><i class="fa fa-user"></i> Core-1</a></li>
+                <li><a href="./sprint2-cultural.html"><i class="fa fa-user"></i> Core-2</a></li>
+                <li><a href="./sprint3-cultural.html"><i class="fa fa-user"></i> Core-3</a></li>
+                <li><a href="./sprint4-cultural.html"><i class="fa fa-user"></i> Core-4</a></li>
+                <li><a href="./sprint5-cultural.html"><i class="fa fa-user"></i> Core-5</a></li>
+                <li><a href="./sprint1-technical.html"><i class="fa fa-envelope"></i> Technical-1</a></li>
+                <li><a href="./sprint2-technical.html" class="active"><i class="fa fa-envelope"></i> Technical-2</a></li>
+                <li><a href="./sprint3-technical.html"><i class="fa fa-envelope"></i> Technical-3</a></li>
+                <li><a href="./sprint4-technical.html"><i class="fa fa-envelope"></i> Technical-4</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <section class="home section">
+                <div class="container">
+                    <h1>Classes and ID's</h1>
+                    <article>
+                        <p>Our bread and butter technologies for web development, HTML and CSS have been quite consistent over time. In fact, an HTML document for a static website today would look very similar, if not identical, to that of an HTML document
+                            for a website back in the 90s. Today, the only limitation to a responsive, well laid out, and feature rich website is our imagination, and as junior developers or those interested in learning to build websites, it helps to
+                            become familiar with the HTML and CSS “tools” that we have at our disposal. In this blog, we will be looking at the HTML “class” and “id” attributes. The goal is to provide context on how these two differ and some best practices
+                            when using them. But first, an analogy!</p>
+                    </article>
+                    <br/>
+                    <article>
+                        <h2>Barcodes and Serial Numbers</h2>
+                        <p>To assist us with understanding id’s and classes, let us use the analogy of barcodes and serial numbers. Take an item from a local JBHi-Fi or Harvey Norman store, let’s say it’s a pair of headphones. On the headphone’s packaging
+                            there will be a barcode, which allows the store to identify what the item is and how much it costs. It may also contain other information, like it’s colour, or whether it has noise cancelling features. It can be assumed that
+                            all headphones of this type will have the same barcode, containing the same information.</p>
+                        <br/>
+                        <p>Also, the headphones will have a serial number on them. This serial number is completely unique, which distinguishes itself from all other headphones of its type. Not just in the store, but around the world. Let’s say our local
+                            JBHi-Fi is holding a sale on headphones. Adjusting the pricing using the serial number would mean they would have to make this adjustment to all the headphones of this type, as each serial number is unique. Now, this isn’t
+                            feasible is it? Instead, the adjustment can be made to the barcode information, as the barcode is shared information about these headphones. This would mean that the price adjustment only needs to be done once.</p>
+                        <br/>
+                        <p>So, regarding an id and class, an element that we wish to uniquely style in css should use an id attribute. Whereas an element or a group of elements which we wish to style collectively and consistently should use a class attribute.</p>
+                    </article>
+                    <article>
+                        <h2>Good practices when using Classes and ID's</h2>
+                        <p>How we use these attributes is important, especially when working on large scale projects where the amount of ID and Class names can get so numerous, we lose track of what is styling what.</p>
+                        <br/>
+                        <p>Below is a brief list of good practices when using IDs and Classes:</p>
+                        <br/>
+                        <ol>
+                            <li>Deciding when to use an ID</li>
+                            <ul>
+                                <li>Only use an ID if you want to style to apply to one element</li>
+                                <li>ID should be unique</li>
+                            </ul>
+                            <br/>
+                            <li>Deciding when to use a Class</li>
+                            <ul>
+                                <li>Use a class if you want a style to apply to multiple elements</li>
+                                <li>Classes are NOT unique</li>
+                            </ul>
+                            <br/>
+                            <li>Use functional ID and Class names</li>
+                            <ul>
+                                <li>Deriving names from functionality is usually good practice, as this is ties to structure, helps with conceptual understanding and collaboration. It is less of a maintenance problem as the page element in question might
+                                    not change its meaning, and when it does, it requires more substantial changes.</li>
+                            </ul>
+                            <br/>
+                            <li>Use names that are as Short as possible, but as Long as necessary</li>
+                            <ul>
+                                <li>Try to get to the point without sacrificing comprehension</li>
+                                <li>Try not to use presentational names. For example, "red", "left", or anything that has to do with layout. Avoiding this gives you great advantages around maintenance.</li>
+                            </ul>
+                            <br/>
+                            <li>Try to minimize the use of Class and ID's</li>
+                            <ul>
+                                <li>Unless IDs are absolutely needed for something other than styling, try to avoid them. The same goes with Classes as this is cognitively easiest and less of a maintenance burden.</li>
+                                <li>Try not to confuse structural changes with visual changes.</li>
+                            </ul>
+                        </ol>
+                    </article>
+                    <br/>
+                    <article>
+                        <h2>"Wrapping" Up</h2>
+                        <p>In this blog, we got our toes wet with a bit of HTML/CSS knowledge. Touching on id’s and classes, discussed the differences, their use, and some good practices to adhere to when using them. Understanding how to work with id’s and
+                            classes in web development is incredibly important. Not only does it give us the opportunity to encapsulate aspects of css styling, it also makes maintenance and collaboration a breeze.</p>
+                    </article>
+                    <br/>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -25,6 +25,10 @@ body {
     box-sizing: border-box;
 }
 
+li {
+    left: 10px;
+}
+
 ::before,
  ::after {
     box-sizing: border-box;
